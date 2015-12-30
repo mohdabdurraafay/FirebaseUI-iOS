@@ -7,8 +7,9 @@ Pod::Spec.new do |s|
   s.author       = { "Firebase" => "support@firebase.com" }
   s.social_media_url = "https://twitter.com/firebase"
   s.source       = { :git => "https://github.com/mohdabdurraafay/FirebaseUI-iOS.git", :tag => 'v0.3.1' }
-  s.platform = :ios
+  s.platform = :ios, watchos
   s.ios.deployment_target = "8.0"
+  s.watchos.deployment_target = "2.0"
   s.dependency "Firebase", "~>2.5"
   s.ios.framework = "UIKit"
   s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '"$(PODS_ROOT)/Firebase"' }
