@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Firebase" => "support@firebase.com" }
   s.social_media_url = "https://twitter.com/firebase"
-  s.source       = { :git => "https://github.com/firebase/FirebaseUI-iOS.git", :tag => 'v0.3.1' }
+  s.source       = { :git => "https://github.com/mohdabdurraafay/FirebaseUI-iOS.git", :tag => 'v0.3.1' }
   s.platform = :ios
   s.ios.deployment_target = "8.0"
   s.dependency "Firebase", "~>2.5"
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
 s.subspec 'Auth' do |auth|
     auth.dependency "FirebaseUI/Facebook"
-    auth.dependency "FirebaseUI/Google"
+#auth.dependency "FirebaseUI/Google"
     auth.dependency "FirebaseUI/Twitter"
     auth.dependency "FirebaseUI/Password"
   end
