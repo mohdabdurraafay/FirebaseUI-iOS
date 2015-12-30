@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "FirebaseUI"
-  s.version      = "0.3.1.1"
+  s.version      = "0.3.1"
   s.summary      = "UI binding libraries for Firebase."
   s.homepage     = "https://github.com/firebase/FirebaseUI-iOS"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
