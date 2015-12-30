@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
   s.author       = { "Firebase" => "support@firebase.com" }
   s.social_media_url = "https://twitter.com/firebase"
-  s.source       = { :git => "https://github.com/mohdabdurraafay/FirebaseUI-iOS.git", :tag => 'v0.3.1' }
+  s.source       = { :git => "https://github.com/mohdabdurraafay/FirebaseUI-iOS.git", :commit => '0ae7d02534a091c3302b5a72e0788aabbe92e90f' }
   s.platform = :ios
   s.ios.deployment_target = "8.0"
   s.dependency "Firebase", "~>2.5"
