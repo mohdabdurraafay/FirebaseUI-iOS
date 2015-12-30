@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		61C8225D1C33DB5D00EC4AB2 /* FirebaseUI.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 61C8225C1C33DB5D00EC4AB2 /* FirebaseUI.podspec */; };
 		BB372B551B8BE4890046905E /* FirebaseTwitterAuthProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = BB372B541B8BE4890046905E /* FirebaseTwitterAuthProvider.m */; };
 		BB372B601B8D1B580046905E /* FirebaseTwitterAuthProvider.h in Headers */ = {isa = PBXBuildFile; fileRef = BB372B531B8BE4510046905E /* FirebaseTwitterAuthProvider.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BB4877901BA8A0C000FD3D4D /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB48778F1BA8A0C000FD3D4D /* GoogleSignIn.framework */; };
@@ -93,6 +94,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		61C8225C1C33DB5D00EC4AB2 /* FirebaseUI.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = FirebaseUI.podspec; sourceTree = "<group>"; };
 		BB372B531B8BE4510046905E /* FirebaseTwitterAuthProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = FirebaseTwitterAuthProvider.h; path = Auth/API/FirebaseTwitterAuthProvider.h; sourceTree = "<group>"; };
 		BB372B541B8BE4890046905E /* FirebaseTwitterAuthProvider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FirebaseTwitterAuthProvider.m; path = Auth/Implementation/FirebaseTwitterAuthProvider.m; sourceTree = "<group>"; };
 		BB48778F1BA8A0C000FD3D4D /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = sdk/google_signin_sdk_2_2_0/GoogleSignIn.framework; sourceTree = "<group>"; };
@@ -301,6 +303,7 @@
 		D8C5799D1B57349000899F86 = {
 			isa = PBXGroup;
 			children = (
+				61C8225C1C33DB5D00EC4AB2 /* FirebaseUI.podspec */,
 				D8B6ACE81B5839A5005CDDB2 /* Frameworks */,
 				D8C579A81B57349000899F86 /* FirebaseUI */,
 				D8C579A71B57349000899F86 /* Products */,
@@ -430,6 +433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61C8225D1C33DB5D00EC4AB2 /* FirebaseUI.podspec in Resources */,
 				D809A16A1BFBAECA000257AA /* Assets.xcassets in Resources */,
 				D809A1661BFBAC7F000257AA /* FirebaseLoginViewController.xib in Resources */,
 			);
