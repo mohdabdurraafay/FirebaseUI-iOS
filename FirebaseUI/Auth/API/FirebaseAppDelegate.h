@@ -32,11 +32,13 @@
 
 #import <Firebase/Firebase.h>
 
+#if SKIP_GOOGLE
 #if LOCAL_BUILD
 #import <GoogleSignIn/GoogleSignIn.h>
 #import "GGLContext.h"
 #else
 #import <Google/SignIn.h>
+#endif
 #endif
 
 #import <FBSDKCoreKit/FBSDKCoreKit.h>

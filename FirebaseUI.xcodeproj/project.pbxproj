@@ -620,6 +620,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"LOCAL_BUILD=1",
+					"SKIP_GOOGLE=1",
 					"$(inherited)",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
@@ -662,6 +663,10 @@
 					"$(PROJECT_DIR)/target/Products/Release-iphoneos",
 					"$(PROJECT_DIR)/target/Products/Release-iphonesimulator",
 					"$(PROJECT_DIR)/sdk/google_signin_sdk_2_4_0",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"SKIP_GOOGLE=1",
+					"$(inherited)",
 				);
 				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_PEDANTIC = YES;

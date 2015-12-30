@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
 s.subspec 'Auth' do |auth|
     auth.dependency "FirebaseUI/Facebook"
-#auth.dependency "FirebaseUI/Google"
+    auth.dependency "FirebaseUI/Google"
     auth.dependency "FirebaseUI/Twitter"
     auth.dependency "FirebaseUI/Password"
   end
@@ -35,22 +35,31 @@ s.subspec 'Facebook' do |facebook|
   facebook.dependency "FirebaseUI/AuthHelper"
   facebook.dependency "FBSDKCoreKit"
   facebook.dependency "FBSDKLoginKit"
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'SKIP_GOOGLE=1'
 end
 
 s.subspec 'Google' do |google|
   google.source_files = "FirebaseUI/Auth/**/FirebaseGoogleAuthProvider.{h,m}"
   google.dependency "FirebaseUI/AuthHelper"
   google.dependency "Google/SignIn"
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'SKIP_GOOGLE=0'
 end
 
 s.subspec 'Twitter' do |twitter|
   twitter.source_files = "FirebaseUI/Auth/**/{FirebaseTwitterAuthProvider,TwitterAuthDelegate}.{h,m}"
   twitter.dependency "FirebaseUI/AuthHelper"
   twitter.ios.framework = "Accounts"
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'SKIP_GOOGLE=1'
 end
 
 s.subspec 'Password' do |password|
   password.source_files = "FirebaseUI/Auth/**/FirebasePasswordAuthProvider.{h,m}"
   password.dependency "FirebaseUI/AuthHelper"
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
+config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'SKIP_GOOGLE=1'
 end
+
  end
